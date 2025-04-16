@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>TrailerHub app</title>
+</head>
+
+<body>
+      <!-- intro Screen -->
+  <div id="introScreen" class="intro-screen">
+    <div class="movie-logo">
+      <p class="welcome-text">Welcome in TrailerHub </p>
+    </div>
+  </div>
+                     <!-- home page -->
+    <div class="main">
+        <div class="navbar">
+            <div class="home_logo"></div>
+            <div class="icon"> 
+                 <h2 class="app_name">TrailerHub</h2>     
+            </div>
+            
+                <div class="menu">
+                     <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index2.html">CONTACT US</a></li>
+    
+                     </ul>
+               </div>
+            
+            <form id="form">
+                <input type="text" id="search" class="search" placeholder="Search">
+            </form>
+        </div>
+    </div>
+    <main id="main"></main>
+
+    <!-- Trailer Modal  -->
+    <div id="trailerModal" class="trailer-modal hidden">
+        <div class="trailer-content">
+            <iframe id="trailerIframe" src="https://www.youtube.com/embed/sqoBgJiLQck" frameborder="0" allowfullscreen></iframe>
+            <button class="close-btn" onclick="closeTrailer()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
